@@ -1,0 +1,251 @@
+:root {
+    --Blue-200: #dddbff;
+    --Grayish-Blue: #848794;
+    --Blue-850: #1d2c67;
+    --Blue-950: #0c122c;
+}
+
+/* СТИЛІ СКИДАННЯ ДЛЯ КОЖНОГО ПРОЕКТУ */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+hr,
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 400;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.5s ease-in-out;
+}
+
+ins {
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* ЗАВЕРШЕННЯ СТИЛІВ СКИДАННЯ ДЛЯ КОЖНОГО ПРОЕКТУ */
+
+body {
+    /* 4 властивості для центрування елементів в середині блоку */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* --- */
+    background: var(--Blue-950);
+    color: var(--Blue-200);
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    max-width: 920px;
+    width: 100%;
+    min-height: 201px;
+    position: relative;
+
+    .function {
+        background-color: var(--Blue-850);
+        max-width: 350px;
+        width: 100%;
+        min-height: 201px;
+        border-radius: 10px 100px 10px 10px;
+        padding: 40px;
+
+        img.logo {
+            margin-bottom: 33px;
+        }
+
+        .btns {
+            display: flex;
+            gap: 16px;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        button {
+            width: 48px;
+            height: 48px;
+            background-color: var(--Blue-950);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.5s cubic-bezier(0.85, 0.11, 0.57, 1);
+
+        }
+
+        button:hover {
+            background-color: var(--Blue-200);
+        }
+
+    }
+
+    .stats {
+        background-color: var(--Blue-850);
+        max-width: 540px;
+        width: 100%;
+        min-height: 154px;
+        border-radius: 10px;
+        --leftpad: 40px;
+        padding: var(--leftpad);
+
+        p {
+            font-size: 14px;
+            line-height: 16px;
+            color: var(--Blue-200);
+            margin-bottom: 16px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .bar {
+            background: rgba(12, 18, 44, 0.5);
+            mix-blend-mode: normal;
+            /* opacity: 0.5; */
+            border-radius: 10px;
+            height: 20px;
+            padding: 3px;
+            margin-bottom: 8px;
+
+        }
+
+        .gradient {
+
+            background: linear-gradient(90deg, #FFA197 0%, #FF4A95 100%);
+            border-radius: 8px;
+            height: 14px;
+            padding: 2px;
+            max-width: 339px;
+
+        }
+
+        .circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            margin-left: auto;
+
+        }
+
+        .space {
+            width: 179px;
+            height: 72px;
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 9px;
+            box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.25);
+            border-radius: 10px 10px 0px 10px;
+            position: absolute;
+            top: 0;
+            /* left: 0; */
+            right: 0;
+            margin-right: var(--leftpad);
+
+
+            span:nth-child(1) {
+
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 40px;
+                color: var(--Blue-950);
+
+
+            }
+
+            span:nth-child(2) {
+
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 1px;
+                color: var(--Blue-950);
+                mix-blend-mode: normal;
+                opacity: 0.5;
+
+            }
+
+            .triangle {
+                /* background-color: green; */
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                right: 0;
+                /* bottom: 0; */
+                top: 100%;
+                border: 12px solid transparent;
+                border-top-color: #FFFFFF;
+                border-right-color: white;
+
+                /* border-bottom-color: burlywood; */
+                /* border-left-color: #3a3066; */
+            }
+
+        }
+
+        .level {
+            /* background-color: lemonchiffon; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 14px;
+                color: var(--Blue-200);
+
+            }
+
+        }
+    }
+
+
+}
